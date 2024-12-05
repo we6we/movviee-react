@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700");
+
+
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-roboto: "Roboto Slab", serif;
+  --font-playfair: "Playfair Display", serif;
+  --primary-color: #b17f57; /*  Soft, warm color */
+  --secondary-color: #343739; /* Darker, neutral color */
+  --background-color: #271515; /*  Deep, rich background */
+  --accent-color: #dd7872; /*  Blue accent color */
+  --text-color: #f0f0f0; /* Off-white text for contrast */
+  --light-background: #f0f0f0; /* Light background for light mode */
+  --light-text: #212426; /* Dark text for light mode */
+}
+
+body {
+  font-family: var(--font-roboto);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6; /*  Improved readability */
+}
+
+.dark-mode {
+  background-color: var(--light-background); /* Light background for dark mode */
+  color: var(--light-text); /* Dark text for dark mode */
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  background-color: var(--background-color);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  color: #3d0412;
+}
+
+.logo h1 {
+  font-family: 'Georgia';
+  font-size: 45;
+  color: #dd7872; 
+  margin: 12;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-right: 2rem;
+}
+
+nav a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--accent-color);
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+.search-container form {
+  display: flex;
+  align-items: center;
+  margin-right: 2rem;
+}
+
+.search-container input {
+  padding: 0.8rem 1rem;
+  border: none;
+  border-radius: 2rem;
+  background-color: #333;
+  color: var(--text-color);
+  font-size: 1rem;
+  margin-right: 1rem;
+  outline: none;
+}
+
+.search-container button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.search-container img {
+  width: 20px;
+  height: 20px;
+  filter: invert(100%);
+}
+
+.login-button {
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 2rem;
+  background-color: var(--accent-color);
+  color: var(--text-color);
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #0080c0;
+}
+
+main {
+  padding: 2rem;
+  text-align: left;
+}
+
+h2 {
+  font-family: var(--font-playfair);
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.movie-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.movie-card {
+  width: calc(25% - 1rem);
+  margin-bottom: 2rem;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.movie-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.movie-info {
+  padding: 1rem;
+  background-color: #282c2f;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.movie-info h3 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.movie-info p {
+  color: var(--text-color);
+  font-size: 0.9rem;
+}
+
+.movie-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+  padding: 1rem;
+  background-color: #282c2f;
+  text-align: center;
+  color: var(--text-color);
+}
+
+.dark-mode-toggle {
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 2rem;
+  background-color: var(--accent-color);
+  color: var(--text-color);
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dark-mode-toggle:hover {
+  background-color: #0080c0;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 900px) {
+  .movie-card {
+    width: calc(50% - 1rem);
+  }
+}
+
+@media (max-width: 600px) {
+  .movie-card {
+    width: 100%;
+  }
+}
