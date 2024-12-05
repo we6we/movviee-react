@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/we6we/movviee-react.git/static/css/main.d3037c31.css",
-    "main.js": "/we6we/movviee-react.git/static/js/main.00cea15f.js",
-    "index.html": "/we6we/movviee-react.git/index.html",
-    "static/media/search.svg": "/we6we/movviee-react.git/static/media/search.59aa7a4041a24d3278d27e5017031a4d.svg",
-    "main.d3037c31.css.map": "/we6we/movviee-react.git/static/css/main.d3037c31.css.map",
-    "main.00cea15f.js.map": "/we6we/movviee-react.git/static/js/main.00cea15f.js.map"
+    "main.css": "/movviee-react/static/css/main.d3037c31.css",
+    "main.js": "/movviee-react/static/js/main.0fd99c37.js",
+    "index.html": "/movviee-react/index.html",
+    "static/media/search.svg": "/movviee-react/static/media/search.59aa7a4041a24d3278d27e5017031a4d.svg",
+    "main.d3037c31.css.map": "/movviee-react/static/css/main.d3037c31.css.map",
+    "main.0fd99c37.js.map": "/movviee-react/static/js/main.0fd99c37.js.map"
   },
   "entrypoints": [
     "static/css/main.d3037c31.css",
-    "static/js/main.00cea15f.js"
+    "static/js/main.0fd99c37.js"
   ]
 }
